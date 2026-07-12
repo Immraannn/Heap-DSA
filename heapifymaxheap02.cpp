@@ -34,3 +34,8 @@ void heapify(int arr[], int n, int i) {
         heapify(arr, n, largest);
     }
 }
+
+// Build Max Heap from any random array
+for (int i = n / 2; i >= 1; i--) {
+    heapify(arr, n, i);
+}
