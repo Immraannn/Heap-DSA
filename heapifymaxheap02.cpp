@@ -36,6 +36,12 @@ void heapify(int arr[], int n, int i) {
 }
 
 // Build Max Heap from any random array
+
+// Why start from n/2?
+// Because:
+// Nodes from n/2 + 1 to n are leaf nodes.
+// Leaf nodes are already heaps (they have no children).
+// Only internal (non-leaf) nodes need heapification.
 for (int i = n / 2; i >= 1; i--) {
     heapify(arr, n, i);
 }
