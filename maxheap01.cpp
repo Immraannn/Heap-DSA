@@ -1,10 +1,7 @@
 #include <iostream>
 using namespace std;
-
 class Heap {
-
 public:
-    // Heap array
     // Index 0 is unused
     int arr[100];
     // Current number of elements in heap
