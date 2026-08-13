@@ -1,3 +1,6 @@
+// We need to connect all ropes into one rope with minimum total cost.
+// The rule is:
+// Always connect the two smallest ropes first.
 #include <iostream>
 #include <vector>
 #include <queue>
@@ -49,3 +52,11 @@ int main() {
 }
 // output
 // Minimum cost =29
+
+| Step  | Ropes taken | New rope | Cost added | Total cost | Heap after  |
+| ----- | ----------- | -------: | ---------: | ---------: | ----------- |
+| Start | —           |        — |          — |          0 | `{2,3,4,6}` |
+| 1     | 2 + 3       |        5 |          5 |          5 | `{4,5,6}`   |
+| 2     | 4 + 5       |        9 |          9 |         14 | `{6,9}`     |
+| 3     | 6 + 9       |       15 |         15 |     **29** | `{15}`      |
+
